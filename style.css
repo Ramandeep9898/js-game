@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: #caffbf;
+}
+.Score_div {
+  position: fixed;
+  background-color: #caffbf;
+
+  text-align: center;
+  color: #ffadad;
+  user-select: none;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+.Score_board {
+  display: grid;
+  position: fixed;
+  background-image: linear-gradient(#ffadad, #a0c4ff);
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 5px;
+  font-weight: bolder;
+  user-select: none;
+  border: 3px solid white;
+}
+/* rgb(113, 113, 255) */
+.Score_btn {
+  color: #ffadad;
+  background-color: #caffbf;
+  border: none;
+  margin-top: 5px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  /* border: 2px solid red; */
+  user-select: none;
+}
+@media screen and (max-width: 600px) {
+  .Score_div {
+    text-align: center;
+
+    user-select: none;
+    font-size: 20px;
+
+    font-weight: bold;
+  }
+  .footer {
+    font-size: 8px;
+    text-align: center;
+  }
+}
