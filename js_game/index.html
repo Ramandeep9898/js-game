@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5ENJK0JFWD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-5ENJK0JFWD");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body ng-controller="testCtrl">
+    <div class="Score_div">
+      <span> Score : </span>
+      <span id="Score"> 0 </span>
+    </div>
+
+    <div id="score_board" class="Score_board">
+      <h1 id="bigScore">0</h1>
+      <h3>Points</h3>
+      <div>
+        <button id="StartGameBtn" class="Score_btn">Start Game</button>
+      </div>
+    </div>
+
+    <canvas> </canvas>
+
+    <footer class="footer">
+      <p>Designed & Developed by Ramandeep © 2020. All Rights Reserved</p>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
